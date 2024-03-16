@@ -135,7 +135,9 @@ Shared workload: Group Work Perfomance
 ======================================
 Hemn: Initiated the App from step 1-5 including updating the README file in parallel.
 Sandeep: Moved on with step 5-7 updating the README file accordingly.
-Amanjit: Finished the steps 7-9 also putting all notes in the README file.
+Amanjit: >Finished the steps 7-9 also putting all notes in the README file.
+         > I also worked on making the depolyment for testing purpose. Here is the URL:- https://testcoolsofa.azurewebsites.net/ 
+         > I tried different looks for testing app and also added more products.
 
 Other observations:
 - We togther created the app, ran and tested, every step of the way.
