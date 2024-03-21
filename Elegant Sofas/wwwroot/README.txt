@@ -1,6 +1,6 @@
 
 					    [ CYB206: WEB APPLICATION SECURITY ]
-						  Group Project Prototype - SOFAS WEB APP
+					   Group Project Prototype - SOFAS WEB APP
 Beta Group
 ----------->					
 Hemn Hamad Ameen
@@ -156,3 +156,4 @@ Shared workload: Group Work Perfomance
 Troubleshooting & Maintenance
 ================================
 2024-03-21 925 Errors fixed in Authentication - Loing issues
+2024-03-21 425 Updated the README adding recent observations
