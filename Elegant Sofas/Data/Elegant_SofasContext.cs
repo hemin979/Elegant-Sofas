@@ -14,6 +14,7 @@ namespace Elegant_Sofas.Data
         {
         }
 
+        public static object Products { get; internal set; }
         public DbSet<Elegant_Sofas.Models.Sofas> Sofas { get; set; } = default!;
     }
 }

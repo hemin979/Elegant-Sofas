@@ -10,18 +10,15 @@ using System.Threading.Tasks; // Add this namespace for Task
 namespace Elegant_Sofas.Controllers
 {
 
-    [Authorize]
+   
 
     [InitializeSimpleMembership]
-    public class HomeController : Controller
+    public class HomeController(ILogger<HomeController> logger) : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+#pragma warning disable IDE0052 // Remove unread private members
+        private readonly ILogger<HomeController> _logger = logger;
 
-        // Constructor injection for ILogger
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
+#pragma warning restore IDE0052 // Remove unread private members
 
         public IActionResult Index()
         {

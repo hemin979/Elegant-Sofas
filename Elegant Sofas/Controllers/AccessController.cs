@@ -15,7 +15,7 @@ namespace Elegant_Sofas.Controllers
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
             if (User.Identity.IsAuthenticated)
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Home", "Sofas");
             }
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
 
@@ -28,11 +28,13 @@ namespace Elegant_Sofas.Controllers
             if (modelLogin.Email == "admin@yahoo.com" && modelLogin.PassWord == "@Cyber12345")
             {
                 // Create claims for the authenticated user
+#pragma warning disable IDE0090 // Use 'new(...)'
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.NameIdentifier, modelLogin.Email),
                     new Claim("OtherProperties", "Example Role")
                 };
+#pragma warning restore IDE0090 // Use 'new(...)'
 
                 // Create an identity for the user
                 var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
@@ -50,7 +52,7 @@ namespace Elegant_Sofas.Controllers
                                               authProperties);
 
                 // Redirect the user to the home page
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Home", "Sofas");
             }
 
             // If user authentication fails, show error message
