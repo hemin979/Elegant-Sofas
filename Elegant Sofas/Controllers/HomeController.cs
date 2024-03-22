@@ -10,7 +10,7 @@ using System.Threading.Tasks; // Add this namespace for Task
 namespace Elegant_Sofas.Controllers
 {
 
-    [Authorize]
+   
 
     [InitializeSimpleMembership]
     public class HomeController(ILogger<HomeController> logger) : Controller
