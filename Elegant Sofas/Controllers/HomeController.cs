@@ -10,22 +10,17 @@ using System.Threading.Tasks; // Add this namespace for Task
 namespace Elegant_Sofas.Controllers
 {
 
-   
 
-    [InitializeSimpleMembership]
-    public class HomeController(ILogger<HomeController> logger) : Controller
+    public class HomeController : Controller
     {
-#pragma warning disable IDE0052 // Remove unread private members
-        private readonly ILogger<HomeController> _logger = logger;
+        private readonly ILogger<HomeController> _logger;
 
-#pragma warning restore IDE0052 // Remove unread private members
-
-        public IActionResult Index()
+        public HomeController(ILogger<HomeController> logger)
         {
-            return View();
+            _logger = logger;
         }
 
-        public IActionResult About()
+        public IActionResult Index()
         {
             return View();
         }
@@ -33,17 +28,6 @@ namespace Elegant_Sofas.Controllers
         public IActionResult Privacy()
         {
             return View();
-        }
-
-        public IActionResult Sofas()
-        {
-            return View();
-        }
-
-        public async Task<IActionResult> LogOut()
-        {
-            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            return RedirectToAction("Login", "Access");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
