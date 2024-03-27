@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Elegant_Sofas.Data;
 using Elegant_Sofas.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Elegant_Sofas.Controllers
 {
@@ -57,6 +58,7 @@ namespace Elegant_Sofas.Controllers
         }
 
         // GET: Sofas/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
