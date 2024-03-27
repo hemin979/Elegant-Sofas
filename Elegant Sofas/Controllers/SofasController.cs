@@ -10,9 +10,14 @@ using Elegant_Sofas.Models;
 
 namespace Elegant_Sofas.Controllers
 {
-    public class SofasController(Elegant_SofasContext context) : Controller
+    public class SofasController : Controller
     {
-        private readonly Elegant_SofasContext _context = context;
+        private readonly Elegant_SofasContext _context;
+
+        public SofasController(Elegant_SofasContext context)
+        {
+            _context = context;
+        }
 
         // GET: Sofas
         public async Task<IActionResult> Index(string searchString)

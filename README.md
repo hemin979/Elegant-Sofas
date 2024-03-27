@@ -1,10 +1,9 @@
-
 					    [ CYB206: WEB APPLICATION SECURITY ]
-					   Group Project Prototype - SOFAS WEB APP
+						  Group Project Prototype
 Beta Group
------------>					
+----------->
 Hemn Hamad Ameen
-Amanjit Kaur
+Amanjit Kaur 
 Sandeep Singh
 		 		>=====================> ASP.NET Core MVC <=======================< 
 
@@ -12,15 +11,15 @@ Sandeep Singh
 
 ====> PART 1: Get started with ASP.NET Core MVC <====
  
-2024-02-17 1433
+2024-02-17 2:33 PM
 
-- Created new project named "Elegant Sofas", having three folders: Controllers, Models and Views
+- Created new project named "Sofa App", having three folders: Controllers, Models and Views
 - changed the Home page, adding a Sofa image with some format creativity.
 
  
 ====> PART 2: Add a controller <====
 
-2024-02-17 1442
+2024-02-17 2:42 PM
 
 - Added a controller under Controller folder named "HelloWorldController" and updated with a some code.
 - Now the page URL is like this: https://localhost:7078/helloworld --> showing this message "This is my default action..."
@@ -28,7 +27,7 @@ Sandeep Singh
 
 ====> PART 3: Add a View <====
 
-2024-02-17 1448
+2024-02-17 2:48 PM
 
 - Created a new forlder named "HelloWorld", adding a Razor "Index.cshtml" to the folder and replacing the code with some new code. 
 - Updating the content of the Views/Shared/_Layout.cshtml file with the given code. Adding App name "SOFAS"
@@ -37,7 +36,7 @@ Sandeep Singh
 
 ====> PART 4: Add a Model <====
 
-2024-02-17 1503
+2024-02-17 3:02 PM
 
 - Added a class under Model forlder and named "SOFAS.cs"
 - Added New Scaffolded Item under Controller forlder name "SOFASController", adding SQL Server as database provider.
@@ -48,7 +47,7 @@ From the Tools menu, select NuGet Package Manager > Package Manager Console, the
 
 ====> PART 5: Work with a database in an ASP.NET Core MVC app <====
 
-2024-02-17 1510
+2024-02-17 3:10 PM
 
 - Examining the database: View Designer & View Data >> brwosing SOFAS.cs content in the database
 - Seed the database by creating "SeedData" under Models folder and updating the code. 
@@ -58,7 +57,7 @@ From the Tools menu, select NuGet Package Manager > Package Manager Console, the
 
 ====> PART 6: Controller Methods and Views in ASP.NET Core <====
 
-2024-02-17 1520
+2024-02-17 3:20 PM
 
 - Tested the app by editing the SOFAS records (edit, create and delete) Sofas.
 - Reviewed the code as per the tutorial, updating the Models/SOFAS.cs file and add the highlighted lines
@@ -66,7 +65,7 @@ From the Tools menu, select NuGet Package Manager > Package Manager Console, the
 
 ====> PART 7: add search to an ASP.NET Core MVC app <====
 
-2024-02-17 1530
+2024-02-17 3:30 PM
 
 - Update the Index method found inside Controllers/SOFASController.cs with the some code
 - Update the Views/SOFASs/Index.cshtml file, and add the <form> Filter text box to the page
@@ -74,7 +73,7 @@ From the Tools menu, select NuGet Package Manager > Package Manager Console, the
 
 ====> PART 8: Add a New Field to an ASP.NET Core MVC app <====
 
-2024-02-17 1542
+2024-02-17 3:42 PM
 
 - Adding a "Rating" property to Models/SOFAS.cs module
 - Edit the /Views/SOFASs/Index.cshtml file and add a Rating field
@@ -86,7 +85,7 @@ From the Tools menu, select NuGet Package Manager > Package Manager Console, the
 
 ====> PART 9: Add a Validation an ASP.NET Core MVC app <====
 
-2024-02-17 1550
+2024-02-17 3:50 PM
 
 - Update the SOFAS class to take advantage of the built-in validation attributes Required, StringLength, RegularExpression, Range and the DataType
 - Field Validation: validating the data input in the fields. (e.g. String for Product, Decimals for Price..etc)
@@ -94,36 +93,16 @@ From the Tools menu, select NuGet Package Manager > Package Manager Console, the
 
 ====> PART 9: 10, Examine the Details and Delete Methods of an ASP.NET Core App <====
 				
-2024-02-17 1600
+2024-02-17 4:00 PM
 
 - Examined the Details method.
 - Examine the Delete and DeleteConfirmed methods
-
-====> PART 10: Deployment and publishing the App to MS Azure Cloud <====
-
-2024-03-07 1200
-
-- Rebuilding the app and publishing it to MS Azure
-- Create App Service on Azure cloud
-- Create SQL database on Azure cloud
-- Create an instance on the App and start publishing to Azure
-- Publishing has been done successfully
-- Now the App can be accessed via this URL: https://coolsofa.azurewebsites.net/
-
-====> PART 11: Authenication & Authorization <====
-
-2024-03-10 1245
-Authentication and Authorization have been added to the application
-- Once the published app on Azure accessed via this URL: https://coolsofa.azurewebsites.net/Identity/Account/Login?ReturnUrl=%2F
-- Login page prompts, you should input these admin credentials: 
-username: admin@yahoo.com
-passwrd: @Cyber12345     //-----------------------------------> Credentials here ----------<>
 
 							============> END OF THE APP NOTES <============ 
 
 
 &&&&&&& Finally saving the updates to GitHub repository &&&&&&&
-Here is repo URL: https://github.com/hemin979/Elegant-Sofas
+Here is repo URL: 
 
 
 Source of Data: The data has been collected from teppermans:
@@ -133,27 +112,13 @@ https://www.teppermans.com/furniture/living-room/sofas-sectionals/sofas
 ======================================
 Shared workload: Group Work Perfomance
 ======================================
-Hemn: Initiated the App from step 1-5 including updating the README file in parallel.
-Sandeep: Moved on with step 5-7 updating the README file accordingly.
-Amanjit: Finished the steps 7-9 also putting all notes in the README file.
-
-Other observations:
-- We togther created the app, ran and tested, every step of the way.
-- Added the README file, putting our inputs and observations.
-- Created a gitHub repo for the App. 
-- Updated the databse and added new features with the Sofa products.
-- It was a good experience as a team on such a project.
-
-
-======================================
-Shared workload: Group Work Perfomance
-======================================
 - We togther created the app, ran and tested, every step of the way.
 - Added the README file, putting our inputs and observations.
 - Created a gitHub repo for the App. 
 - Updated the databse with the Sofa products. 
-
-Troubleshooting & Maintenance
-================================
-2024-03-21 925 Errors fixed in Authentication - Loing issues
-2024-03-21 425 Updated the README adding recent observations
+"# Prosofa" 
+"# Prosofa" 
+"# test" 
+"# test" 
+"# test" 
+"# test" 

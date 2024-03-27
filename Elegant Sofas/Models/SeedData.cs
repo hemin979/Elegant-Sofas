@@ -3,6 +3,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Elegant_Sofas.Data;
 using System;
 using System.Linq;
+using Elegant_Sofas.Controllers;
+using Microsoft.AspNetCore.Identity;
 
 namespace Elegant_Sofas.Models
 {
@@ -18,6 +20,7 @@ namespace Elegant_Sofas.Models
             {
                 return;   // DB has been seeded
             }
+#pragma warning restore CS8321 // Local function is declared but never used
 
             // If there are no sofas, add some sample data.
             context.Sofas.AddRange(
@@ -33,5 +36,7 @@ namespace Elegant_Sofas.Models
 
             context.SaveChanges();
         }
+
+        }
     }
-}
+

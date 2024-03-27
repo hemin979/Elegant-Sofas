@@ -157,3 +157,4 @@ Troubleshooting & Maintenance
 ================================
 2024-03-21 925 Errors fixed in Authentication - Loing issues
 2024-03-21 425 Updated the README adding recent observations
+2024-03-27 115 I have fixed some authorization errors that were vilnerabilities. 
